@@ -8,7 +8,6 @@ import java.util.Map;
 import static com.objects.LoginPageObjects.*;
 
 public class LoginPage {
-
     public void doLogin(Map<String, String> data){
         Actions.enterText(USERNAME_INPUT, data.getOrDefault("Username", "Admin"));
         Helper.log("Entered username as " + data.getOrDefault("Username", "Admin"));
